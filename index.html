@@ -2,35 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CORS Test</title>
+  <title>Lorem Ipsum</title>
 </head>
 <body>
-  <h1>CORS Test</h1>
-  <button id="testBtn">Test API Request</button>
-  <pre id="output"></pre>
-
-  <script>
-    const button = document.getElementById('testBtn');
-    const output = document.getElementById('output');
-
-    button.addEventListener('click', async () => {
-      output.textContent = 'Sending request...';
-
-      try {
-        const response = await fetch(
-          'https://www.tixtree.com/api/checkouts/events/2025-public-tours-421f6ad52539',
-          {
-            credentials: 'include', // if your API uses cookies
-          }
-        );
-
-        const text = await response.text();
-        output.textContent = `Response received:\n${text}`;
-      } catch (err) {
-        output.textContent = `Request blocked:\n${err}`;
-        console.error('CORS error or blocked:', err);
-      }
-    });
-  </script>
+  <h1>Lorem Ipsum</h1>
 </body>
 </html>
